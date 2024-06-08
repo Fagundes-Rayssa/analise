@@ -2,56 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-compatible" content=" IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de login</title>
-    <style>
-         body{
-            font-family: Arial, Helvetica, sans-serif;
-            background-image: linear-gradient(45deg, turquoise,white );
-         }
-        div {
-            background-color: rgba(0, 0, 0, 0.9);
-            position: absolute;
-            top: 50%;
-            left: 50%;<
-            transform: translate(-50%,-50%);
-            padding: 80px;
-            border-radius: 15px;
-            color: #fff;
-        }
-        input{
-            padding: 15px;
-            border: none;
-            outline: none;
-            font-size: 15px;
-
-        }
-        button{
-            background-color: dodgerblue;
-            border: none; 
-            padding: 15px;
-            width: 100%;
-            border-radius: 10px;
-            color: white;
-            font-size: 15px;
-        }
-            button:hover{
-                background-color: deepskyblue;
-                cursor: pointer;
-            }
-    </style>
+    <title>sing up</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <h1>Login</h1>
-        <input type="text" placeholder=E-mail>
-        <br><br>
-        <input type="password" placeholder="Senha">
-        <br><br>
-        <input type="password" placeholder=esqueci.minha.senha>
-        <br><br>
-        <button>Enviar </button>
-    </div>
+    <div class="box">
+    <div class="img-box">
+    <div class="form-box"></div>
+    <h2>Criar Conta</h2>
+    <p>Já é membro? <a href="#">Login</a></p>
+    <form action="#">
+        <div class="input-group">
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" placeholder="Digite o seu nome Completo" required>
+        </div>
+        <div class="input-group">
+            <label for="E-mai">E-mai</label>
+            <input type="email" id="email" placeholder="Digite o seu E-mai" required>
+        </div>
+        <div class="input-group">
+            <label for="Telefone">Telefone</label>
+            <input type="tel" id="Telefone" placeholder="Digite o seu Telefone" required>
+        </div>
+        <div class="input-group w50">
+            <label for="senha">senha</label>
+            <input type="password" id="senha" placeholder="Digite sua senha" required>
+        </div>
+        <div class="input-group w50">
+            <label for=" Confimar senha"> Confimar senha</label>
+            <input type="password" id=" Confimarsenha" placeholder="Condirme a sua senha" required>
+        </div>
+        <div class="input-group">
+            <button>cadastrar</button>
+    </form>
+    ></div>
 </body>
 </html>
